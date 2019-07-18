@@ -10,8 +10,8 @@
 
 /* Files namespace_animal_generated.h and namespace_animal_generated.c are created from animal.NodeSet2.xml in the
  * /src_generated/animal_cs directory by CMake */
-#include "animal_nodeids.h"
-#include "namespace_animal_generated.h"
+#include "generated_nodeids.h"
+#include "namespace_generated_generated.h"
 
 #include <signal.h>
 #include <stdlib.h>
@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
 
     UA_StatusCode retval;
     /* create nodes from nodeset */
-    if(namespace_animal_generated(server) != UA_STATUSCODE_GOOD) {
+    if(namespace_generated_generated(server) != UA_STATUSCODE_GOOD) {
         UA_LOG_ERROR(UA_Log_Stdout, UA_LOGCATEGORY_SERVER, "Could not add the animal nodeset. "
                                                            "Check previous output for any error.");
         retval = UA_STATUSCODE_BADUNEXPECTEDERROR;
